@@ -9,7 +9,6 @@
 #content{
     display: flex;
     flex-direction: column;
-
     flex: 2;
 }
 
@@ -21,14 +20,17 @@
 #form-left{
     display: flex;
     flex-direction: column;
-    flex:1;
+    gap:10px;
 }
 
 #form-right{
     display: flex;
     flex-direction: column;
-    flex:1;
+    gap: 10px;
+    margin-right: 20%;
 }
+
+
 
 /* form{
     display:flex;
