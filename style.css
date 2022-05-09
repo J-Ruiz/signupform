@@ -1,0 +1,36 @@
+#flex-container{
+    display: flex;
+}
+
+#background-image{
+    flex:1;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+
+    flex: 2;
+}
+
+#flex-container-form{
+    display: flex;
+    gap: 20%;
+}
+
+#form-left{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+#form-right{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+/* form{
+    display:flex;
+    flex-direction: column;
+} */
