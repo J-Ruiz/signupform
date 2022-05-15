@@ -1,19 +1,46 @@
+body{
+    margin: 0;
+}
 #flex-container{
     display: flex;
+    height: 780px;
 }
 
 #background-image{
+    background: url("agnieszka-kowalczyk-obMdrL5pFWI-unsplash.jpg");
+    max-width: 500px;
+    background-size: cover;
     flex:1;
+
+}
+
+#background-title{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(100px);
+    background-color: rgb(100, 99, 99);
+    padding: 30px;
+    opacity: .8;
 }
 
 #content{
     display: flex;
     flex-direction: column;
+    gap: 10%;
+    margin:0;
     flex: 2;
+    
+}
+
+#form-description{
+    padding-left: 5%;
 }
 
 #flex-container-form{
     display: flex;
+    padding:6% 5%;
+    background-color: rgb(233, 232, 232);
     gap: 20%;
 }
 
@@ -30,9 +57,7 @@
     margin-right: 20%;
 }
 
+#submit{
+    padding-left: 5%;
+}
 
-
-/* form{
-    display:flex;
-    flex-direction: column;
-} */
