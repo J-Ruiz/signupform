@@ -35,6 +35,9 @@ body{
 
 #form-description{
     padding-left: 5%;
+    padding-top:6%;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 #flex-container-form{
@@ -59,5 +62,10 @@ body{
 
 #submit{
     padding-left: 5%;
+    margin-top: -5%;
 }
 
+#submit button{
+    font-size: 18px;
+    padding: 1% 1.5%;
+}
