@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="flex-container">
@@ -29,25 +30,31 @@
                     <div id="flex-container-form">
                         <div id=form-left>
                             <label for="">FIRST NAME</label>
-                            <input type="text" id="" minlength="1" pattern="(\[A-Za-z]+)" required>
-        
+                            <input type="text" id="first-name" name="first-name" title="Enter your first name" minlength="1" pattern="([A-Za-z]+)" required>
+                            <span id="first-name-message"></span>
+
                             <label for="">EMAIL</label>
-                            <input type="email" id="" required>
-    
+                            <input type="email" id="email" name="email" title="Enter your email address" placeholder="youremail@website.org" required>
+                            <span id="email-message"></span>
+
                             <label for="">PASSWORD</label>
-                            <input type="password" id="" minlength="8" maxlength="16" required>
+                            <input type="password" id="password" name="password"  pattern = "([A-Za-z0-9!@#$%^&*?]+)" title="Please enter a valid password between 8 and 16 characters using Alpha numeric and special characters (!@#$%^&*?) " minlength="8" maxlength="16" required>
+                            <span id="password-message"></span>
                         </div>
                       
                         <div id="form-right"> 
                             <label for="">LAST NAME</label>
-                            <input type="text" id="" minlength="1" pattern="(\[A-Za-z]+)" required>
-        
+                            <input type="text" id="last-name" name="last-name" title="Please enter a valid last name" minlength="1" pattern="([A-Za-z]+)" required>
+                            <span id="last-name-message"></span>
+
                             <label for="">PHONE NUMBER</label>
-                            <input type="text" id="" required>
-        
+                            <input type="text" id="phone-number" name="phone-number" placeholder="1234567890" title="Please enter a valid phone number without spaces dashes or country code xxxyyyzzzz" minlength="10" maxlength="10" pattern="(\[0-9]+)" required >
+                            <span id="phone-number-message"></span>
+
                             <label for="">CONFIRM PASSWORD</label>
-                            <input type="text" id="" required>
-    
+                            <input type="password" id="confirm-password" name="confirm-password" pattern = "([A-Za-z0-9!@#$%^&*?]+)" title="Confirm your password" minlength="8" maxlength="16"  required>
+                            <span id="confirm-password-message"></span>
+
                         </div>
 
                     </div>

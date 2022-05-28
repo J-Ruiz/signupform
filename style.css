@@ -47,7 +47,7 @@ body{
     display: flex;
     padding:6% 5%;
     background-color: rgb(233, 232, 232);
-    gap: 20%;
+    gap: 300px;
 }
 
 #form-left{
@@ -56,11 +56,20 @@ body{
     gap:10px;
 }
 
+
 #form-right{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-right: 20%;
+}
+
+input{
+    width: 300px;
+}
+span {
+    width: 300px;
+    font-size:12px;
 }
 
 #submit{
@@ -71,4 +80,17 @@ body{
 #submit button{
     font-size: 18px;
     padding: 1% 1.5%;
+}
+
+input:valid {
+    border: 2px solid green;
+    padding: 5px;
+}
+
+input:invalid {
+    border-color:red
+}
+
+span {
+    color: red;
 }
