@@ -3,6 +3,21 @@ document.addEventListener("keyup", function(event) {
     let id = event.target.id;
     let spanId =  id + "-message";
     let targetSpan = document.getElementById(spanId);
+
+    if(id == "confirm-password"){
+        let password = document.getElementById("password");
+        event.target.pattern = "([" + password.value + "]+)";  
+    }
+
+    function confirmBothPasswordsMatch(){
+        let password = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirm-password");
+            if(password.innerHTML !== confirmPassword.innerHTML){
+                return false; 
+            }
+            return true;
+        }
+    
     
     function errorMessage(){
         if(id=="first-name" || message.innerHTML==""){
@@ -18,9 +33,9 @@ document.addEventListener("keyup", function(event) {
             targetSpan.innerHTML = "* Please submit a valid alphabetical last name";
         }
         if(id=="phone-number"|| message.innerHTML==""){
-            targetSpan.innerHTML = "* Please sumbit a valid phone number 1234567890 no dashes or spaces";
+            targetSpan.innerHTML = "* Submit a valid number 1234567890 no - or spaces";
         }
-        if(id=="confirm-password"|| message.innerHTML==""){
+        if(id=="confirm-password"|| message.innerHTML==""|| confirmBothPasswordsMatch()==false){
             targetSpan.innerHTML = "* Passwords do not match";
         }
         
